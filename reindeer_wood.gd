@@ -39,33 +39,33 @@ func _on_Timer_timeout():
 	if steps < maxsteps:
 		if mod == 0:
 			timer.set_wait_time(0.5)
-			mod_onlyredwhite(b)
+			mod_allRedWhite(b)
 			b = not b
 		if mod == 1:
 			timer.set_wait_time(0.5)
-			mod_wave1()
+			mod_linesVert()
 		if mod == 2:
 			timer.set_wait_time(0.5)
-			mod_random1()
+			mod_randomAll()
 		if mod == 3:
 			timer.set_wait_time(0.5)
-			mod_random2(b)
+			mod_randomRedWhite(b)
 			b = not b
 		if mod == 4:
 			timer.set_wait_time(0.2)
-			mod_snake1()
+			mod_runningHzBelly()
 		if mod == 5:
 			timer.set_wait_time(0.2)
-			mod_wave2()
+			mod_filledHz()
 		if mod == 6:
 			timer.set_wait_time(0.1)
-			mod_snake2()
+			mod_filledVert()
 		if mod == 7:
 			timer.set_wait_time(0.2)
-			mod_wave3()
+			mod_singleVert()
 		if mod == 8:
 			timer.set_wait_time(0.2)
-			mod_wave4()
+			mod_singleHz()
 		steps += 1
 	else:
 		if multimode:
@@ -76,8 +76,8 @@ func _on_Timer_timeout():
 		steps = 0				
 		reset()
 		
-		
-func mod_onlyredwhite(var b):
+#0 mod
+func mod_allRedWhite(var b):
 	maxsteps = 2 * repeat
 	if b:
 		for whiteled in whitelist:
@@ -90,14 +90,15 @@ func mod_onlyredwhite(var b):
 		for redled in redlist:
 			setRed(redled)
 
-		
-func mod_wave1():
+#1 mod
+func mod_linesVert():
 	maxsteps = 4 * repeat
 	reset()	
 	for led in leds[steps%M]:
 		setColor(led)
 
-func mod_random1():
+#2 mod
+func mod_randomAll():
 	maxsteps = 6 * repeat
 	for m in range(0,M):
 		for n in range(0, N):
@@ -105,8 +106,9 @@ func mod_random1():
 				setColor(leds[m][n])
 			else:
 				 setBlack(leds[m][n])
-				
-func mod_random2(var b):
+
+#3 mod
+func mod_randomRedWhite(var b):
 	maxsteps = 6 * repeat
 	reset()
 	for m in range(0,M):
@@ -121,8 +123,9 @@ func mod_random2(var b):
 						setColor(leds[m][n])
 			else:
 				 setBlack(leds[m][n])
-
-func mod_snake1():
+				
+#4 mod
+func mod_runningHzBelly():
 	maxsteps = 24
 	reset()
 	if steps < N: 
@@ -135,8 +138,9 @@ func mod_snake1():
 	elif steps < 4*N:
 		for led in leds[3]:
 			setColor(led)
-			
-func mod_wave2():
+
+#5 mod
+func mod_filledHz():
 	maxsteps = 24
 	if steps < N: 
 		setColor(leds[0][steps%N])
@@ -147,7 +151,8 @@ func mod_wave2():
 	elif steps < 4*N:
 		setColor(leds[3][steps%N])
 
-func mod_wave3():
+#6 mod
+func mod_filledVert():
 	maxsteps = 24
 	if steps < M: 
 		setColor(leds[steps%M][0])
@@ -161,8 +166,9 @@ func mod_wave3():
 		setColor(leds[steps%M][4])
 	elif steps < 6*M:
 		setColor(leds[steps%M][5])
-		
-func mod_wave4():
+
+#7 mod
+func mod_singleVert():
 	maxsteps = 24
 	reset()
 	if steps < M: 
@@ -174,8 +180,8 @@ func mod_wave4():
 	elif steps < 4*M:
 		setColor(leds[steps%M][3])
 		
-
-func mod_snake2():
+#8 mod
+func mod_singleHz():
 	maxsteps = 24
 	reset()
 	if steps < N: 
