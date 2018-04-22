@@ -1,0 +1,233 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://reindeer_wood.png" type="Texture" id=1]
+[ext_resource path="res://reindeer_wood.gd" type="Script" id=2]
+[ext_resource path="res://circle_white.png" type="Texture" id=3]
+
+[node name="reindeer_wood" type="Sprite" index="0"]
+
+position = Vector2( 324.176, 300 )
+scale = Vector2( 0.839844, 0.773438 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="led_w1" type="Sprite" parent="." index="0" groups=[
+"gr_white",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -181.314, -8.52789 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_w2" type="Sprite" parent="." index="1" groups=[
+"gr_white",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -176.928, 58.8047 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_w3" type="Sprite" parent="." index="2" groups=[
+"gr_white",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -108.323, -7.09521 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_w4" type="Sprite" parent="." index="3" groups=[
+"gr_white",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -110.962, 58.8047 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_w5" type="Sprite" parent="." index="4" groups=[
+"gr_white",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -39.7179, -8.52789 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_w6" type="Sprite" parent="." index="5" groups=[
+"gr_white",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -39.7179, 58.8047 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_w7" type="Sprite" parent="." index="6" groups=[
+"gr_white",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 27.5681, -11.3931 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_w8" type="Sprite" parent="." index="7" groups=[
+"gr_white",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 30.2068, 58.8047 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_w9" type="Sprite" parent="." index="8" groups=[
+"gr_white",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 89.4342, -14.683 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_w10" type="Sprite" parent="." index="9" groups=[
+"gr_white",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 138.392, -48.6409 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_r1" type="Sprite" parent="." index="10" groups=[
+"gr_red",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -146.584, 24.4221 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_r2" type="Sprite" parent="." index="11" groups=[
+"gr_red",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -147.903, 90.3221 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_r3" type="Sprite" parent="." index="12" groups=[
+"gr_red",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -75.3398, 20.1243 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_r4" type="Sprite" parent="." index="13" groups=[
+"gr_red",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -74.0204, 83.1591 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_r5" type="Sprite" parent="." index="14" groups=[
+"gr_red",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -5.31281, 21.2514 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_r6" type="Sprite" parent="." index="15" groups=[
+"gr_red",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -6.77463, 78.3969 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_r7" type="Sprite" parent="." index="16" groups=[
+"gr_red",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 50.238, 18.0766 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_r8" type="Sprite" parent="." index="17" groups=[
+"gr_red",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 69.2423, 76.8095 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_r9" type="Sprite" parent="." index="18" groups=[
+"gr_red",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 108.713, 35.5377 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_r10" type="Sprite" parent="." index="19" groups=[
+"gr_red",
+]]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 152.569, -5.73413 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="led_dummy" type="Sprite" parent="." index="20" groups=[
+"gr_dummy",
+]]
+
+visible = false
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 310.931, 131.316 )
+scale = Vector2( 0.385936, 0.467509 )
+texture = ExtResource( 3 )
+
+[node name="Timer" type="Timer" parent="." index="21"]
+
+process_mode = 1
+wait_time = 0.5
+one_shot = false
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+
